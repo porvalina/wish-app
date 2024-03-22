@@ -4,6 +4,7 @@ import {
   ScrollView,
   StatusBar,
   StyleSheet,
+  Text,
   useColorScheme,
 } from 'react-native';
 import WelcomeScreen from './source/screens/WelcomeScreen';
@@ -12,8 +13,7 @@ import LaunchScreen from './source/screens/LaunchScreen';
 import MapScreen from './source/screens/MapScreen';
 import WishListScreen from './source/screens/WishListScreen';
 import WishItemScreen from './source/screens/WishItemScreen';
-
-import store from './redux/store';
+import {store, persistor} from './source/redux/store';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react'
 

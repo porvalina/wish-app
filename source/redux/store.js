@@ -2,8 +2,8 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { persistStore, persistReducer } from 'redux-persist'
 
-import wishReducer from './reducers';
-import { configureStore } from 'redux'
+import wishReducer from './reducer';
+import { createStore } from 'redux'
 import storage from 'redux-persist/lib/storage' 
 
 const persistConfig = {
@@ -13,5 +13,5 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, wishReducer)
 
-export const store = configureStore(persistedReducer)
+export const store = createStore(persistedReducer)
 export const persistor = persistStore(store)

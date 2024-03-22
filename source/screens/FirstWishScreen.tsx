@@ -7,7 +7,7 @@ import { launchImageLibrary } from 'react-native-image-picker';
 import { useState } from 'react';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { addWish } from './redux/action';
+import { addWish } from '../redux/action';
 
 
 
